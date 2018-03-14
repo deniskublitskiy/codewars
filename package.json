@@ -1,0 +1,11 @@
+{
+  "name": "codewars",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.4.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
