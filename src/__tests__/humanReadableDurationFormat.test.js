@@ -48,4 +48,4 @@ describe('Format duration', () => {
     test('1 year, 19 days, 18 hours, 19 minutes and 46 seconds', () => {
         expect(formatDuration(33243586)).toBe('1 year, 19 days, 18 hours, 19 minutes and 46 seconds');
     });
-})
+});
