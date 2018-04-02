@@ -1,4 +1,4 @@
-const { stringEvaluation } = require("../stringEvaluation");
+const { stringEvaluationBetter: stringEvaluation } = require("../stringEvaluation");
 
 describe('String Evaluation', () => {
     test('Test case #1', () => {

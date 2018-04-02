@@ -30,6 +30,12 @@ const stringEvaluation = (string, condition) => {
         })
 };
 
+const stringEvaluationBetter = (string, condition) => {
+    const map = [].reduce.call(string, (map, character) => map.set(character, map.get(character) + 1 || 1), new Map());
+    return condition.map(condition => eval(condition.replace(/[^\d!=<>]/gi, 'map.get("$&")')))
+};
+
 module.exports = {
     stringEvaluation,
+    stringEvaluationBetter,
 };
