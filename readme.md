@@ -7,8 +7,8 @@ The function must accept a non-negative integer. If it is zero, it just returns 
 It is much easier to understand with an example:
 
 ```javascript
-formatDuration(62)    // returns "1 minute and 2 seconds"
-formatDuration(3662)  // returns "1 hour, 1 minute and 2 seconds"
+formatDuration(62);    // returns "1 minute and 2 seconds"
+formatDuration(3662);  // returns "1 hour, 1 minute and 2 seconds"
 ```
 
 #### For the purpose of this Kata, a year is 365 days and a day is 24 hours.
@@ -67,3 +67,32 @@ All the test strings would be valid to the point that they could be reliably dec
 Good luck!
 
 After you master this kata, you may try to (http://www.codewars.com/kata/decode-the-morse-code-for-real)[Decode the Morse code, for real].
+
+### String Evaluation
+
+The string will be as such:
+
+`"aab#HcCcc##l#"`
+
+The conditions will be passed in an array as such:
+
+`["a<b","#==4","c>=C","H!=a"]`
+
+The conditions in this example array can be interpreted as:
+
+1) (a<b):The number of times 'a' occurs in the string should be less than the number of times 'b' occurs in the string
+
+2) (#==4):'#' should occur 4 times in the string
+
+3) (c>=C):'c' should occur greater than or equal to the number of times 'C' occurs.
+
+4) (P!=a): The number of times 'P' occurs should not equal the number of times 'a' occurs
+
+In this example condition 1 is false and 2,3,4 are true. So the return value will be an array as such:
+
+`[False,True,True,True]`
+
+Characters in conditions will always be in the string. Characters in the string are chosen from:
+
+`string.ascii_letters+"@#$%^&*()_{}[]"`
+
