@@ -1,4 +1,4 @@
-const { zeroesAndOnes } = require('../zeroesAndOnes');
+const { bestZeroesAndOnes: zeroesAndOnes } = require('../zeroesAndOnes');
 
 describe('Zeroes and Ones', () => {
     test('Test case #1', () => {
