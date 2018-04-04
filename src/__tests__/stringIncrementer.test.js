@@ -1,4 +1,4 @@
-const { bestStringIncrementer: stringIncrementer } = require('../stringIncrementer');
+const { bestStringIncrementer2: stringIncrementer } = require('../stringIncrementer');
 
 describe('String incrementer', () => {
     test('Test case #1', () => {
