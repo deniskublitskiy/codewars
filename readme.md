@@ -166,3 +166,17 @@ Given arr1 = [3,10,5], arr2 = [20,7,15,8]
  maxAndMin([3,10,5],[3,10,5]) === [7,0]
  maxAndMin([1,2,3,4,5],[6,7,8,9,10]) === [9,1]
 ```
+
+### Consonant value
+
+A consonant is any letter of the alphabet except `a, e, i ,o, u`. The consonant substrings in the word "zodiacs" are `z, d, cs`. Assuming `a = 1, b = 2 ... z = 26`, the values of these substrings are `26 ,4, 22` because `z = 26,d = 4,cs = 3 + 19 = 22`. The maximum value of these substrings is 26. Therefore, `solve("zodiacs") = 26`.
+
+Given a lowercase string that has alphabetic characters only and no spaces, return the highest value of consonant substrings.
+
+Good luck!
+
+If you like this Kata, please try:
+
+[Word values](https://www.codewars.com/kata/598d91785d4ce3ec4f000018)
+
+[Vowel-consonant lexicon](https://www.codewars.com/kata/59cf8bed1a68b75ffb000026)
