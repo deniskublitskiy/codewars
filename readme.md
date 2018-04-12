@@ -180,3 +180,62 @@ If you like this Kata, please try:
 [Word values](https://www.codewars.com/kata/598d91785d4ce3ec4f000018)
 
 [Vowel-consonant lexicon](https://www.codewars.com/kata/59cf8bed1a68b75ffb000026)
+
+###Champernowne's Championship
+
+Ho ho! So you think you know integers, do you? Well then, young wizard, tell us what the Nth digit of the Champernowne constant is!
+
+The constant proceeds like this: `0.12345678910111213141516...`
+
+I hope you see the pattern!
+
+Conjure a function that will accept an integer, n, and return the (one-indexed) nth digit of Champernowne's constant. Can you get it to run in constant time?
+
+For example:
+
+`n = 1` should return `0` (the very first digit)
+
+`n = 2` should return `1` (we ignore the period character since it's not a digit!)
+
+`n = 20` should return `4` (that's the 4 in the number 14, 20th in sequence)
+
+For any invalid values, such as `0` and below, or non-integers, return... `NaN`!
+
+I hope (for your sake) that you've been practicing your mathemagical spells, because a naïve solution will not be fast enough to compete in this championship!
+
+Invoke with precision, and be wary of rounding errors in the realms of enormity!
+
+May the best integer win!
+
+###One line task: Square Every Digit
+
+Inspired by [Square Every Digit](https://www.codewars.com/kata/square-every-digit/) (and of course by the inimitable myjinxin2015's many clever one-line kata), your goal here is precisely the same (to square every digit in the given number), in 36 or fewer characters (<37). Your return value should be in integer format.
+
+Your input will always be a valid, non-negative integer... no tricks!
+
+Bonus: Can you get it down to 34 characters?
+
+Note: Just as a head's up, numbers are > 2^31, so bitwise operators aren't viable.
+
+Examples:
+
+```
+sd(0)=>    0
+sd(64)=>   3616
+sd(1111)=> 1111
+sd(2222)=> 4444
+sd(3333)=> 9999
+sd(3212)=> 9414
+sd(1234)=> 14916
+sd(77455754)=> 4949162525492516
+sd(99999999)=> 8181818181818181
+```
+
+P.S., if you can get the sample tests to pass in < 37 characters, the full tests should pass without a hitch!
+
+Have fun, and please upvote if you enjoyed it :)
+
+Found this one too easy? [This one's a bit more difficult!](https://www.codewars.com/kata/5a905291fd57772be0000039)
+ 
+Too hard? [This one's a bit easier](https://www.codewars.com/kata/one-line-task-square-a-number-without-star-plus-or-math-dot-pow) :)
+
