@@ -280,3 +280,17 @@ The function should return the top n records, where each user name can appear at
 if `n_top` is negative or `0`, the returned value should be an empty list.
 
 if `n_top` is greater than the total number of records, you should include as many valid records as possible.
+
+### RGB To Hex Conversion
+
+The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
+
+The following are examples of expected output values:
+
+```javascript
+rgb(255, 255, 255) // returns FFFFFF
+rgb(255, 255, 300) // returns FFFFFF
+rgb(0,0,0) // returns 000000
+rgb(148, 0, 211) // returns 9400D3
+```
+
