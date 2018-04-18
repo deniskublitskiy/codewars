@@ -1,4 +1,4 @@
-const {deleteNOccurrencesBest: deleteNOccurrences } = require('../deleteNOccurrences');
+const {deleteNOccurrencesBest1: deleteNOccurrences } = require('../deleteNOccurrences');
 
 describe('Delete occurrences of an element if it occurs more than n times', () => {
     test('Test case #1', () => {
