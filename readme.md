@@ -349,3 +349,16 @@ deleteNth ([1,1,1,1],2) // return [1,1]
 
 deleteNth ([20,37,20,21],1) // return [20,37,21]
 ```
+
+### Strip Url Params
+
+Complete the method so that it does the following:
+* Removes any duplicate query string parameters from the url
+* Removes any query string parameters specified within the 2nd argument (optional array)
+Examples:
+
+```javascript
+stripUrlParams('www.codewars.com?a=1&b=2&a=2') // returns 'www.codewars.com?a=1&b=2'
+stripUrlParams('www.codewars.com?a=1&b=2&a=2', ['b']) // returns 'www.codewars.com?a=1'
+stripUrlParams('www.codewars.com', ['b']) // returns 'www.codewars.com'
+```
